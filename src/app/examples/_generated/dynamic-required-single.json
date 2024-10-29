@@ -7,6 +7,6 @@
     "doc": "https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#convention"
   },
   "codes": {
-    "[slug]/page.tsx": "type Props = {\n  params: {\n    slug: string;\n  };\n};\n\nexport default function Page({ params }: Props) {\n  return <span>slug: {params.slug}</span>;\n}\n"
+    "[slug]/page.tsx": "type Props = {\n  params: Promise<{\n    slug: string;\n  }>;\n};\n\nexport default async function Page({ params }: Props) {\n  const { slug } = await params;\n\n  return <span>slug: {slug}</span>;\n}\n"
   }
 }

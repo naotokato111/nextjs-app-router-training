@@ -7,7 +7,7 @@ async function Main() {
 
   // TODO: app router has a bug related to having errors in parallel routes.
   // dev works but prod doesn't.
-  // if (Date.now() % 2 === 0) {
+  // if (performance.now() % 2 === 0) {
   //   throw new Error("error 🥲");
   // }
 

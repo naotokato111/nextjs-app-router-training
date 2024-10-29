@@ -1,4 +1,4 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // logging: {
@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   //     fullUrl: true,
   //   },
   // },
-  transpilePackages: ["shiki"],
   experimental: {
+    dynamicIO: true,
     taint: true,
     // typedRoutes: true,
   },

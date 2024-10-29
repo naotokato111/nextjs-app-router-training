@@ -5,6 +5,6 @@ export async function GET() {
   revalidatePath("/examples/router-handlers-revalidate/revalidatePath");
 
   return NextResponse.json({
-    msg: Date.now(),
+    msg: performance.now(),
   });
 }

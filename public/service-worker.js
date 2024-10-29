@@ -11,7 +11,7 @@ self.addEventListener("fetch", (e) => {
     e.respondWith(
       (async () => {
         const res = await fetch(e.request);
-        const createdAt = Date.now();
+        const createdAt = performance.now();
 
         // res.text() fails is when trying to read the same response stream twice.
         const clone = res.clone();

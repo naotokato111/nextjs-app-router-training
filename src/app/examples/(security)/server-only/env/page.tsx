@@ -1,7 +1,9 @@
+'use cache';
+
 import { Client } from "../_components/client";
 import { Server } from "../_components/server";
 
-export default function Page() {
+export default async function Page() {
   return (
     <div>
       <Server />

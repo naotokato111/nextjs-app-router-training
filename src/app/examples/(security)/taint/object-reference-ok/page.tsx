@@ -1,9 +1,6 @@
 import { Client } from "../_components/client";
 import { getMyProfileWithTaintObjectReference } from "../api";
 
-// turn off full route cache for demo
-export const dynamic = "force-dynamic";
-
 export default async function Page() {
   const data = await getMyProfileWithTaintObjectReference();
 

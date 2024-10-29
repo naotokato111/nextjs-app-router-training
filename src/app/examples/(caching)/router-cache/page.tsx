@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <Boundary label="Page">
       <div className="flex flex-col gap-4 text-sm">
-        <p className="text-gray-400">{Date.now()}</p>
+        <p className="text-gray-400">{performance.now()}</p>
         <Link href="/examples/router-cache/0" prefetch>
           {TITLES[0]}
         </Link>

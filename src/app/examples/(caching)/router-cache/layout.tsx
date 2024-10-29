@@ -40,7 +40,9 @@ export default function Layout({ children }: PropsWithChildren) {
                   : "",
               ].join(" ")}
             >
-              <p className="text-right">{(Date.now() - createdAt) / 1000} s</p>
+              <p className="text-right">
+                {(performance.now() - createdAt) / 1000} s
+              </p>
               <p className="text-sm font-semibold">
                 {TITLES[Number(path)] ?? "/"}
               </p>

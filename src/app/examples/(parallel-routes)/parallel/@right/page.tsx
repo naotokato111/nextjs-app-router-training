@@ -1,3 +1,5 @@
+'use cache';
+
 import { Boundary } from "@/app/_components/boundary";
 import { Suspense } from "react";
 import { Loading } from "../_components/loading";
@@ -12,7 +14,7 @@ async function Main() {
   );
 }
 
-export default function Page() {
+export default async function Page() {
   return (
     <Suspense fallback={<Loading />}>
       <Main />

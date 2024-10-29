@@ -1,9 +1,6 @@
 import { Boundary } from "@/app/_components/boundary";
 import { Link } from "@/app/_components/link";
 
-// turn off full route cache for demo
-export const dynamic = "force-dynamic";
-
 export default function Page() {
   return (
     <Boundary label="Root Page" filePath="page.tsx">

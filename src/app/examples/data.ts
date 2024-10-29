@@ -249,6 +249,24 @@ By default, Next.js automatically caches the returned values of fetch in the Dat
     },
   },
   caching: {
+    dynamicIO: {
+      path: "dynamicIO",
+      title: "dynamicIO (use cache)",
+      doc: "https://nextjs.org/docs/canary/app/api-reference/directives/use-cache",
+      description: `
+The use cache directive designates a component, function, or file to be cached.
+It can be used at the top of a file to indicate that all functions in the file are cacheable, or inline at the top of a function to mark the function as cacheable.
+This is an experimental Next.js feature, and not a native React feature like use client or use server.
+
+Caching is a technique to improve the performance of web applications by storing the results of computations or data fetches. In Next.js you can use caching to optimize your applications rendering performance.
+
+To explicitly cache certain asynchronous operations and achieve static behavior, you can use the use cache directive. This allows you to optimize rendering performance by caching results from async data requests, while still enabling dynamic rendering when needed.
+
+The use cache directive is an experimental feature that aims to replace the unstable_cache function. Unlike unstable_cache, which is limited to caching JSON data and requires manual definition of revalidation periods and tags, use cache offers more flexibility. It allows you to cache a wider range of data, including anything that React Server Components (RSC) can serialize, as well as data-fetching outputs and component outputs.
+
+Additionally, use cache automatically manages complexities by tracking both inputs and outputs, making it less likely for you to accidentally poison your cache. Since it serializes both inputs and outputs, you can avoid issues with incorrect cache retrieval.
+      `,
+    },
     "request-memoization": {
       path: "request-memoization",
       title: "Request Memoization (@server)",

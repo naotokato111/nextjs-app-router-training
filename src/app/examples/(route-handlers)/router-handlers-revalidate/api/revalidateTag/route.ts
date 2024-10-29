@@ -5,6 +5,6 @@ export async function GET() {
   revalidateTag("dog");
 
   return NextResponse.json({
-    msg: Date.now(),
+    msg: performance.now(),
   });
 }

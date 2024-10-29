@@ -2,9 +2,6 @@ import { Boundary } from "@/app/_components/boundary";
 import { Loading } from "@/app/_components/loading";
 import { Suspense } from "react";
 
-// turn off full route cache for demo
-export const dynamic = "force-dynamic";
-
 export default function Page() {
   return (
     <div className="flex gap-4">

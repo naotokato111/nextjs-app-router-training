@@ -20,7 +20,7 @@ export default async function Page({ params }: Props) {
   return (
     <Boundary label={title}>
       <div className="flex flex-col gap-4">
-        <span className="text-gray-400 text-sm">{Date.now()}</span>
+        <span className="text-gray-400 text-sm">{performance.now()}</span>
         <Link href="/examples/router-cache">back</Link>
       </div>
     </Boundary>

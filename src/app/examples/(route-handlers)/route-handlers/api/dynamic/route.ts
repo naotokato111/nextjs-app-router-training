@@ -9,5 +9,5 @@ export async function GET(req: NextRequest) {
   // const cookie = (await cookies()).get(COOKIE_NAME);
   // req.nextUrl.searchParams;
 
-  return NextResponse.json({ msg: Date.now() });
+  return NextResponse.json({ msg: performance.now() });
 }

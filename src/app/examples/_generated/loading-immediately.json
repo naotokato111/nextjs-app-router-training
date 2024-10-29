@@ -8,6 +8,6 @@
   },
   "codes": {
     "loading.tsx": "import { Boundary } from \"@/app/_components/boundary\";\n\nexport default function Loading() {\n  return <Boundary label=\"Loading\">loading...</Boundary>;\n}\n",
-    "page.tsx": "import { Boundary } from \"@/app/_components/boundary\";\n\n// turn off full route cache for demo\nexport const dynamic = \"force-dynamic\";\n\nexport default async function Page() {\n  await new Promise((resolve) => setTimeout(resolve, 2000));\n\n  return <Boundary label=\"Page\">hi!</Boundary>;\n}\n"
+    "page.tsx": "import { Boundary } from \"@/app/_components/boundary\";\n\nexport default async function Page() {\n  await new Promise((resolve) => setTimeout(resolve, 2000));\n\n  return <Boundary label=\"Page\">hi!</Boundary>;\n}\n"
   }
 }
