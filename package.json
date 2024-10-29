@@ -5,7 +5,7 @@
   "packageManager": "pnpm@9.12.3",
   "scripts": {
     "setup": "corepack enable pnpm",
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
     "generate": "node -r ts-node/register ./scripts/generateCodeMap.ts",
